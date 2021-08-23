@@ -9,9 +9,9 @@ services:
     volumes:
       - .:/var/www/html/
     links:
-      - db
+      - server
     depends_on:
-      - db
+      - server
   server:
     image: mysql
     container_name: "db"
