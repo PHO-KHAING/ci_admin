@@ -1,8 +1,9 @@
+version: "3"
 services:
-  web:
+  client:
     build: .
-    image: 'php_app'
-    container_name: 'app'
+    image: "php_app"
+    container_name: "app"
     ports:
       - "80:80"
     volumes:
@@ -11,9 +12,9 @@ services:
       - db
     depends_on:
       - db
-  db:
+  server:
     image: mysql
-    container_name: 'db'
+    container_name: "db"
     restart: always
     ports:
       - "3306:3306"
