@@ -4,7 +4,6 @@ services:
     build: .
     image: "ci_admin"
     container_name: "app"
-    command: --default-authentication-plugin=mysql_native_password --innodb-use-native-aio=0
     ports:
       - "88:80"
     volumes:
