@@ -5,7 +5,7 @@ services:
     image: "ci_admin"
     container_name: "app"
     ports:
-      - "80:80"
+      - "88:80"
     volumes:
       - .:/var/www/html/
     links:
