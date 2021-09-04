@@ -2,7 +2,7 @@ version: "3"
 services:
   client:
     build: .
-    image: "php_app"
+    image: "ci_admin"
     container_name: "app"
     ports:
       - "80:80"
