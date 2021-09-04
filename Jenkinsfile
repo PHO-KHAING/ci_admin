@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build docker image') {
           steps {
-            sh 'sudo docker-compose up -d'
+            sh 'sh \'docker-compose up\''
           }
         }
 
