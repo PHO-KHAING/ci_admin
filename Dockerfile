@@ -8,7 +8,7 @@ RUN a2enmod rewrite
 RUN service apache2 restart
 # RUN chown -R 777 www-data:www-data /var/www/html/
 # RUN chmod 777 /var/www/html/
-EXPOSE 80
+EXPOSE 88
 # CMD ["apache2-foreground"]
 # - chmod -R 755 wp-content
 # - chown -R apache:apache wp-content
