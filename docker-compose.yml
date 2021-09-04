@@ -15,7 +15,7 @@ services:
   server:
     image: mysql
     container_name: "db"
-    restart: unless-stopped
+    restart: always
     ports:
       - "8888:3306"
     environment:
